@@ -67,8 +67,8 @@ class BonusClubCard {
         });
         
         this.resend.addEventListener('click', () => {
-            if(this.timerSecond !== 40) {
-                this.timerSecond = 4;
+            if(this.timerSecond !== 10) {
+                this.timerSecond = 10;
                 this.resend.disabled = true;
                 this.resend.classList.remove('active');
                 smsTimer();
@@ -76,7 +76,7 @@ class BonusClubCard {
         });
 
         this.resend.disabled = true;
-        this.timerSecond = 4;
+        this.timerSecond = 10;
 
         const th = this;
 
